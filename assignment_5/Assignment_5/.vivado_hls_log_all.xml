@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_2_3' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.270-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_2_2' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.268-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_2_1' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.266-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_2_0' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.264-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_1_3' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.261-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'bram' on port 'B_1_2' changing to the default 'ap_none' mode." projectName="Assignment_5" solutionName="solution1" date="2025-05-05T16:52:39.259-0500" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

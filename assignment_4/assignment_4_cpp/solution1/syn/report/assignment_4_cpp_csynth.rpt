@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vivado HLS Report for 'assignment_4_cpp'
+================================================================
+* Date:           Mon Apr 28 17:38:43 2025
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        assignment_4_cpp
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 6.930 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      829|      829| 8.290 us | 8.290 us |  829|  829|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |      828|      828|        69|          -|          -|    12|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|     10|        0|      208|    -|
+|FIFO                 |        -|      -|        -|        -|    -|
+|Instance             |        -|      -|     1558|      938|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|      326|    -|
+|Register             |        -|      -|       82|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |        0|     10|     1640|     1472|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |     1440|   2280|   788160|   394080|  320|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |        0|   ~0  |    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     4320|   6840|  2364480|  1182240|  960|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |        0|   ~0  |    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |assignment_4_cpp_bkb_U1  |assignment_4_cpp_bkb  |        0|      0|  779|  469|    0|
+    |assignment_4_cpp_cud_U2  |assignment_4_cpp_cud  |        0|      0|  779|  469|    0|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |Total                    |                      |        0|      0| 1558|  938|    0|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |mul1_d0             |     *    |     10|  0|  45|          64|          64|
+    |add1_d0             |     +    |      0|  0|  71|          64|          64|
+    |i_fu_140_p2         |     +    |      0|  0|  12|           4|           1|
+    |sub1_d0             |     -    |      0|  0|  71|          64|          64|
+    |icmp_ln9_fu_134_p2  |   icmp   |      0|  0|   9|           4|           4|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |     10|  0| 208|         200|         197|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+-----+-----------+-----+-----------+
+    |     Name    | LUT | Input Size| Bits| Total Bits|
+    +-------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm    |  317|         71|    1|         71|
+    |i_0_reg_123  |    9|          2|    4|          8|
+    +-------------+-----+-----------+-----+-----------+
+    |Total        |  326|         73|    5|         79|
+    +-------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------+----+----+-----+-----------+
+    |        Name       | FF | LUT| Bits| Const Bits|
+    +-------------------+----+----+-----+-----------+
+    |ap_CS_fsm          |  70|   0|   70|          0|
+    |i_0_reg_123        |   4|   0|    4|          0|
+    |i_reg_190          |   4|   0|    4|          0|
+    |zext_ln11_reg_195  |   4|   0|   64|         60|
+    +-------------------+----+----+-----+-----------+
+    |Total              |  82|   0|  142|         60|
+    +-------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++----------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|ap_start              |  in |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|ap_done               | out |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|ap_idle               | out |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|ap_ready              | out |    1| ap_ctrl_hs | assignment_4_cpp | return value |
+|array_a_cpp_address0  | out |    4|  ap_memory |    array_a_cpp   |     array    |
+|array_a_cpp_ce0       | out |    1|  ap_memory |    array_a_cpp   |     array    |
+|array_a_cpp_q0        |  in |   64|  ap_memory |    array_a_cpp   |     array    |
+|array_b_cpp_address0  | out |    4|  ap_memory |    array_b_cpp   |     array    |
+|array_b_cpp_ce0       | out |    1|  ap_memory |    array_b_cpp   |     array    |
+|array_b_cpp_q0        |  in |   64|  ap_memory |    array_b_cpp   |     array    |
+|add1_address0         | out |    4|  ap_memory |       add1       |     array    |
+|add1_ce0              | out |    1|  ap_memory |       add1       |     array    |
+|add1_we0              | out |    1|  ap_memory |       add1       |     array    |
+|add1_d0               | out |   64|  ap_memory |       add1       |     array    |
+|sub1_address0         | out |    4|  ap_memory |       sub1       |     array    |
+|sub1_ce0              | out |    1|  ap_memory |       sub1       |     array    |
+|sub1_we0              | out |    1|  ap_memory |       sub1       |     array    |
+|sub1_d0               | out |   64|  ap_memory |       sub1       |     array    |
+|mul1_address0         | out |    4|  ap_memory |       mul1       |     array    |
+|mul1_ce0              | out |    1|  ap_memory |       mul1       |     array    |
+|mul1_we0              | out |    1|  ap_memory |       mul1       |     array    |
+|mul1_d0               | out |   64|  ap_memory |       mul1       |     array    |
+|div1_address0         | out |    4|  ap_memory |       div1       |     array    |
+|div1_ce0              | out |    1|  ap_memory |       div1       |     array    |
+|div1_we0              | out |    1|  ap_memory |       div1       |     array    |
+|div1_d0               | out |   64|  ap_memory |       div1       |     array    |
+|mod1_address0         | out |    4|  ap_memory |       mod1       |     array    |
+|mod1_ce0              | out |    1|  ap_memory |       mod1       |     array    |
+|mod1_we0              | out |    1|  ap_memory |       mod1       |     array    |
+|mod1_d0               | out |   64|  ap_memory |       mod1       |     array    |
++----------------------+-----+-----+------------+------------------+--------------+
+

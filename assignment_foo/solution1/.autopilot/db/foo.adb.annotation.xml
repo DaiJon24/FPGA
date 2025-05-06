@@ -1,0 +1,12 @@
+<annotationInfo>
+<item  id="15" filename="foo.cpp" linenumber="5" name="sext_ln5" contextFuncName="foo" moduleName="foo" rtlName="sext_ln5_fu_85_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="16" filename="foo.cpp" linenumber="5" name="sext_ln5_1" contextFuncName="foo" moduleName="foo" rtlName="sext_ln5_1_fu_89_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="17" filename="foo.cpp" linenumber="3" name="sext_ln3" contextFuncName="foo" moduleName="foo" rtlName="sext_ln3_fu_93_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="18" filename="foo.cpp" linenumber="5" name="add_ln5" contextFuncName="foo" moduleName="foo" rtlName="add_ln5_fu_97_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="16" fileDirectory="/scratch/whoami"><\/item>
+<item  id="19" filename="foo.cpp" linenumber="5" name="sext_ln5_2" contextFuncName="foo" moduleName="foo" rtlName="sext_ln5_2_fu_103_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="23" filename="foo.cpp" linenumber="3" name="icmp_ln3" contextFuncName="foo" moduleName="foo" rtlName="icmp_ln3_fu_107_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="/scratch/whoami"><\/item>
+<item  id="25" filename="foo.cpp" linenumber="3" name="i" contextFuncName="foo" moduleName="foo" rtlName="i_fu_113_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="/scratch/whoami"><\/item>
+<item  id="28" filename="foo.cpp" linenumber="4" name="zext_ln4" contextFuncName="foo" moduleName="foo" rtlName="zext_ln4_fu_119_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="31" filename="foo.cpp" linenumber="5" name="mul_ln5" contextFuncName="foo" moduleName="foo" rtlName="mul_ln5_fu_124_p2" latency="0" BRAM="-1" DSP="2" FF="0" LUT="20" fileDirectory="/scratch/whoami"><\/item>
+<item  id="32" filename="foo.cpp" linenumber="5" name="y" contextFuncName="foo" moduleName="foo" rtlName="out_r_d0" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="/scratch/whoami"><\/item>
+</annotationInfo>

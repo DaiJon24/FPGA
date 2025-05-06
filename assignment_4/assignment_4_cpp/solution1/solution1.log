@@ -1,0 +1,142 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'assignment_4.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from assignment_4.cpp:1:
+In file included from assignment_4.cpp:1:
+./assignment_4.hpp:3:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(
+     ^
+./assignment_4.hpp:4:3: error: use of undeclared identifier 'int64_t'
+  int64_t array_a_cpp[12],
+  ^
+In file included from assignment_4.cpp:1:
+assignment_4.cpp:5:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+     ^
+assignment_4.cpp:5:23: error: use of undeclared identifier 'int64_t'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                      ^
+assignment_4.cpp:5:157: error: expected ';' after top level declarator
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                                                                                                                                                            ^
+                                                                                                                                                            ;
+5 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'assignment_4.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from assignment_4.cpp:1:
+In file included from assignment_4.cpp:1:
+./assignment_4.hpp:3:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(
+     ^
+./assignment_4.hpp:4:3: error: use of undeclared identifier 'int64_t'
+  int64_t array_a_cpp[12],
+  ^
+In file included from assignment_4.cpp:1:
+assignment_4.cpp:5:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+     ^
+assignment_4.cpp:5:23: error: use of undeclared identifier 'int64_t'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                      ^
+assignment_4.cpp:5:157: error: expected ';' after top level declarator
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                                                                                                                                                            ^
+                                                                                                                                                            ;
+5 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'assignment_4.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from assignment_4.cpp:1:
+In file included from assignment_4.cpp:1:
+./assignment_4.hpp:3:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(
+     ^
+./assignment_4.hpp:4:3: error: use of undeclared identifier 'int64_t'
+  int64_t array_a_cpp[12],
+  ^
+In file included from assignment_4.cpp:1:
+assignment_4.cpp:5:6: error: variable has incomplete type 'void'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+     ^
+assignment_4.cpp:5:23: error: use of undeclared identifier 'int64_t'
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                      ^
+assignment_4.cpp:5:157: error: expected ';' after top level declarator
+void assignment_4_cpp(int64_t array_a_cpp[12],int64_t array_b_cpp[12],int64_t add1[12],int64_t sub1[12],int64_t mul1[12],int64_t div1[12], int64_t mod1[12]){
+                                                                                                                                                            ^
+                                                                                                                                                            ;
+5 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

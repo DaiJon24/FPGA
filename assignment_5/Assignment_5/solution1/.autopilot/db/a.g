@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /scratch/whoami/assignment_5/Assignment_5/solution1/.autopilot/db/a.g.bc ${1+"$@"}

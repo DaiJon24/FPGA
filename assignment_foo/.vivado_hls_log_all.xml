@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'foo/out' to 'foo/out_r' to avoid the conflict with HDL keywords or other object names." projectName="assignment_foo" solutionName="solution1" date="2025-04-28T14:45:15.310-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'foo/in' to 'foo/in_r' to avoid the conflict with HDL keywords or other object names." projectName="assignment_foo" solutionName="solution1" date="2025-04-28T14:45:15.303-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

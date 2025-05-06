@@ -1,0 +1,12 @@
+<annotationInfo>
+<item  id="15" filename="lec10ex1.c" linenumber="12" name="sext_ln12" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="sext_ln12_fu_133_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="16" filename="lec10ex1.c" linenumber="12" name="tmp" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="tmp_fu_137_p3" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="21" filename="lec10ex1.c" linenumber="14" name="icmp_ln14" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="icmp_ln14_fu_145_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="/scratch/whoami"><\/item>
+<item  id="24" filename="lec10ex1.c" linenumber="21" name="add_ln21" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="grp_fu_126_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="/scratch/whoami"><\/item>
+<item  id="25" filename="lec10ex1.c" linenumber="21" name="zext_ln21" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="zext_ln21_fu_151_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="28" filename="lec10ex1.c" linenumber="21" name="zext_ln21_1" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="zext_ln21_1_fu_156_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="37" filename="lec10ex1.c" linenumber="24" name="zext_ln24" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="zext_ln24_fu_160_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="40" filename="lec10ex1.c" linenumber="24" name="mul_ln24" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="lec10ex1_mul_32s_bkb_U1" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/scratch/whoami"><\/item>
+<item  id="41" filename="lec10ex1.c" linenumber="24" name="sum" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="sum_fu_169_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="/scratch/whoami"><\/item>
+<item  id="42" filename="lec10ex1.c" linenumber="12" name="i" contextFuncName="lec10ex1" moduleName="lec10ex1" rtlName="grp_fu_126_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="/scratch/whoami"><\/item>
+</annotationInfo>

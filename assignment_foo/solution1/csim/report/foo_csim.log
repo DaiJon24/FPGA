@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../foo_test.cpp in debug mode
+   Compiling ../../../../foo.cpp in debug mode
+   Generating csim.exe
+out[0] = 6
+out[1] = 8
+out[2] = 10
+out[3] = 12
+Comparing against output data 
+*******************************************
+PASS: The output matches the reference output!
+*******************************************
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

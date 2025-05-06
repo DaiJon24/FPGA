@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../lec10ex1_test.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'daijonjames' on host 'cmstrigger02.hep.wisc.edu' (Linux_x86_64 version 5.14.0-427.22.1.el9_4.x86_64) on Tue Apr 22 21:39:13 CDT 2025
+INFO: [HLS 200-10] In directory '/scratch/whoami/lec10ex1/solution1/csim/build'
+In file included from ../../../../lec10ex1_test.c:3:
+../../../../lec10ex1.h:5:7: error: variable has incomplete type 'void'
+        void lec10ex1 {
+             ^
+../../../../lec10ex1.h:5:15: error: expected ';' after top level declarator
+        void lec10ex1 {
+                     ^
+                     ;
+../../../../lec10ex1.h:1:2: error: unterminated conditional directive
+#ifndef LEC10EX1_H_
+ ^
+3 errors generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_daijonjames/7156551745375953346711
+ERROR: [APCC 202-1] APCC failed.
+make: *** [csim.mk:72: obj/lec10ex1_test.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

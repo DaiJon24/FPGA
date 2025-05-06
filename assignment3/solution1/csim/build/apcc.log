@@ -1,0 +1,17 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'daijonjames' on host 'cmstrigger02.hep.wisc.edu' (Linux_x86_64 version 5.14.0-427.22.1.el9_4.x86_64) on Tue Apr 22 21:46:29 CDT 2025
+INFO: [HLS 200-10] In directory '/scratch/whoami/assignment3/solution1/csim/build'
+In file included from ../../../../lec10ex1.c:1:
+../../../../lec10ex1.h:11:7: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif;
+      ^
+      //
+1 warning generated.
+In file included from ../../../../lec10ex1.c:1:
+../../../../lec10ex1.h:11:7: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif;
+      ^
+      //
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_daijonjames/7191871745376390009475
+INFO: [APCC 202-1] APCC is done.

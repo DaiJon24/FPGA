@@ -1,0 +1,3 @@
+lec10ex1_mul_32s_bkb
+lec10ex1_arr
+lec10ex1

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="foo.cpp" path="/scratch/whoami/foo.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="assignment_foo_ref.dat" path="/scratch/whoami/assignment_foo_ref.dat"/>
+    <originFiles name="foo_test.cpp" path="/scratch/whoami/foo_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

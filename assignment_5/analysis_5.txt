@@ -1,0 +1,16 @@
+Complete partition, all dimensions:
+estimated clock: 7.307ns
+latency: min=89  max=89
+
+
+complete partition, 1 Dimension:
+estimated clock: 6.344 ns
+latency: min 185 max=185
+
+unpartitioned:
+estimated clock: 5.772 ns
+latency: min=137 max=137
+
+
+Using complete partition, its clear that partitioning all dimensions while takes more time(longer clock) results in the lowest latency. even lower than if i  partition 1 dimension or none. partitioning only 1 dimension seems to result in a lower clock cycle but a higher latency.
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lec10ex1.c" path="/scratch/whoami/lec10ex1.c"/>
+    <originFiles name="lec10ex1.h" path="/scratch/whoami/lec10ex1.h"/>
+  </source>
+  <testbench>
+    <originFiles name="lec10ex1_out_ref.dat" path="/scratch/whoami/lec10ex1_out_ref.dat"/>
+    <originFiles name="lec10ex1_test.c" path="/scratch/whoami/lec10ex1_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
