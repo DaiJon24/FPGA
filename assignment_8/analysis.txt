@@ -1,0 +1,5 @@
+Latency=4099 cycles
+BRam_18k=0
+DSP48E=192
+FF=419
+LUT=3610

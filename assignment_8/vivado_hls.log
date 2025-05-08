@@ -1,0 +1,250 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'daijonjames' on host 'cmstrigger02.hep.wisc.edu' (Linux_x86_64 version 5.14.0-427.22.1.el9_4.x86_64) on Wed May 07 19:13:33 CDT 2025
+INFO: [HLS 200-10] In directory '/scratch/whoami/assignment_8'
+Sourcing Tcl script '/scratch/whoami/assignment_8/Assignment_8/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/scratch/whoami/assignment_8/Assignment_8'.
+INFO: [HLS 200-10] Adding design file 'example.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'example.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'example_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'result_ref.dat' to the project
+INFO: [HLS 200-10] Opening solution '/scratch/whoami/assignment_8/Assignment_8/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'example.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86052 ; free virtual = 211893
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86052 ; free virtual = 211893
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86038 ; free virtual = 211880
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86037 ; free virtual = 211879
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (example.cpp:15) in function 'example' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (example.cpp:20) in function 'example' completely with a factor of 64.
+INFO: [XFORM 203-101] Partitioning array 'A.V' (example.cpp:6) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V' (example.cpp:6) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'C.V' (example.cpp:6) accessed through non-constant indices on dimension 2 (example.cpp:19:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'C.V' (example.cpp:6) in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'example' (example.cpp:6)...125 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86022 ; free virtual = 211864
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (example.cpp:13:19) in function 'example'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 86020 ; free virtual = 211863
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'example' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 38.73 seconds; current allocated memory: 163.198 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.36 seconds; current allocated memory: 166.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_0_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_1_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_2_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_3_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_4_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_5_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_6_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_7_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_8_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_9_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_10_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_11_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_12_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_13_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_14_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_15_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_16_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_17_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_18_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_19_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_20_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_21_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_22_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_23_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_24_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_25_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_26_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_27_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_28_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_29_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_30_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_31_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_32_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_33_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_34_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_35_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_36_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_37_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_38_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_39_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_40_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_41_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_42_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_43_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_44_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_45_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_46_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_47_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_48_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_49_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_50_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_51_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_52_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_53_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_54_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_55_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_56_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_57_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_58_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_59_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_60_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_61_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_62_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_63_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_0_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_1_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_2_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_3_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_4_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_5_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_6_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_7_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_8_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_9_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_10_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_11_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_12_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_13_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_14_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_15_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_16_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_17_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_18_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_19_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_20_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_21_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_22_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_23_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_24_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_25_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_26_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_27_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_28_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_29_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_30_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_31_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_32_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_33_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_34_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_35_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_36_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_37_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_38_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_39_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_40_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_41_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_42_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_43_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_44_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_45_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_46_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_47_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_48_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_49_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_50_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_51_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_52_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_53_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_54_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_55_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_56_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_57_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_58_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_59_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_60_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_61_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_62_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_63_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_0_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_1_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_2_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_3_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_4_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_5_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_6_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_7_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_8_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_9_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_10_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_11_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_12_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_13_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_14_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_15_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_16_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_17_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_18_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_19_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_20_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_21_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_22_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_23_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_24_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_25_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_26_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_27_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_28_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_29_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_30_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_31_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_32_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_33_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_34_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_35_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_36_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_37_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_38_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_39_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_40_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_41_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_42_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_43_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_44_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_45_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_46_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_47_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_48_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_49_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_50_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_51_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_52_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_53_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_54_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_55_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_56_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_57_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_58_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_59_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_60_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_61_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_62_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/C_63_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'example' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'example'.
+INFO: [HLS 200-111]  Elapsed time: 2.08 seconds; current allocated memory: 169.885 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 122.65 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1629.836 ; gain = 1228.703 ; free physical = 85928 ; free virtual = 211782
+INFO: [VHDL 208-304] Generating VHDL RTL for example.
+INFO: [VLOG 209-307] Generating Verilog RTL for example.
+INFO: [HLS 200-112] Total elapsed time: 65.41 seconds; peak allocated memory: 183.643 MB.
