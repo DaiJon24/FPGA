@@ -18,7 +18,6 @@ void example(din_t A[N][N], din_t B[N][N], din_t C[N][N]) {
 
       C[i][j]=0;
       for (size_t k = 0; k < N; ++k) {
-#pragma HLS UNROLL
 	C[i][j] += A[i][k] * B[k][j];
       }
     }
